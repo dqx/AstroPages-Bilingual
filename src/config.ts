@@ -1,9 +1,9 @@
 export const SITE = {
-  website: "https://astropages-bilingual.pages.dev", // replace this with your deployed domain
+  website: "https://find-ai.pages.dev", // replace this with your deployed domain
   author: "tosaki",
   profile: "https://t0saki.com",
-  desc: "A bilingual blog based on Astro Paper",
-  title: "AstroPaper Bilingual",
+  desc: "AI工具,小机场,VPN,ClaudeCode,免费机场,科学上网,翻墙",
+  title: "发现AI",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
@@ -14,7 +14,7 @@ export const SITE = {
   editPost: {
     enabled: true,
     text: "Edit page",
-    url: "https://github.com/t0saki/AstroPages-Bilingual/edit/main/",
+    url: "https://github.com/dqx/AstroPages-Bilingual/edit/main/",
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"
