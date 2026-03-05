@@ -35,8 +35,11 @@ tags:
 ## 使用说明
 
 安装任意一款软件后，导入订阅链接即可。
+
 电脑端：clash/clashx、Surge、QuantumultX、Singlebox
+
 iphone(ipad)端：Shadowrocket、QuantumultX、Stash、Singlebox
+
 Android端：clash/clashx、Surfboard、v2rayNG、Singlebox
 
 祝你使用愉快！
