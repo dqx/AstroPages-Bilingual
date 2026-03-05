@@ -14,9 +14,7 @@ import { SOCIALS } from "@/constants";
 import { useTranslations, getLangPrefix, getLangFromUrl } from "@/i18n/ui";
 
 export async function getStaticPaths() {
-  return [
-    { params: { lang: "en" } },
-  ];
+  return [{ params: { lang: "en" } }];
 }
 
 const lang = getLangFromUrl(Astro.url);
@@ -30,11 +28,10 @@ const posts = allPosts.filter(({ id }) => id.startsWith(`${lang}/`));
 const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
-
 ---
 
 <Layout>
-<Header lang={lang} />
+  <Header lang={lang} />
   <main id="main-content" data-layout="index" class="app-layout">
     <section id="hero" class:list={["pt-8 pb-6", "border-b border-border"]}>
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
@@ -62,7 +59,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         {t("hero.cta")}
         <LinkButton
           class="underline decoration-dashed underline-offset-4 hover:text-accent"
-          href="https://github.com/t0saki/AstroPages-Bilingual#readme"
+          href="https://find-ai.cc.cd/"
         >
           README
         </LinkButton>
@@ -71,7 +68,9 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         // only display if at least one social link is enabled
         SOCIALS.length > 0 && (
           <div class="mt-4 flex max-sm:flex-col sm:items-center">
-            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">{t("hero.socialLinks")}</div>
+            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">
+              {t("hero.socialLinks")}
+            </div>
             <Socials />
           </div>
         )
@@ -87,7 +86,9 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
             { "border-b border-border": recentPosts.length > 0 },
           ]}
         >
-          <h2 class="text-2xl font-semibold tracking-wide">{t("section.featured")}</h2>
+          <h2 class="text-2xl font-semibold tracking-wide">
+            {t("section.featured")}
+          </h2>
           <ul>
             {featuredPosts.map(data => (
               <Card variant="h3" {...data} />
@@ -100,7 +101,9 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     {
       recentPosts.length > 0 && (
         <section id="recent-posts" class="pt-12 pb-6">
-          <h2 class="text-2xl font-semibold tracking-wide">{t("section.recentPosts")}</h2>
+          <h2 class="text-2xl font-semibold tracking-wide">
+            {t("section.recentPosts")}
+          </h2>
           <ul>
             {recentPosts.map(
               (data, index) =>
@@ -129,9 +132,8 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       // Get the current path to properly set backUrl for language-aware navigation
       const currentPath = window.location.pathname;
       // For homepage, set backUrl to the current lang's homepage
-      const backUrl = currentPath.startsWith('/en') ? '/en/' : '/';
+      const backUrl = currentPath.startsWith("/en") ? "/en/" : "/";
       sessionStorage.setItem("backUrl", backUrl);
     }
   });
 </script>
-

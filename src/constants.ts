@@ -2,7 +2,7 @@ import type { Props } from "astro";
 import IconMail from "@/assets/icons/IconMail.svg";
 import IconGitHub from "@/assets/icons/IconGitHub.svg";
 import IconBrandX from "@/assets/icons/IconBrandX.svg";
-import IconLinkedin from "@/assets/icons/IconLinkedin.svg";
+import IconDeepSeek from "@/assets/icons/IconDeepSeek.svg";
 import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
 import IconFacebook from "@/assets/icons/IconFacebook.svg";
 import IconTelegram from "@/assets/icons/IconTelegram.svg";
@@ -18,10 +18,10 @@ interface Social {
 
 export const SOCIALS: Social[] = [
   {
-    name: "GitHub",
-    href: "https://github.com/t0saki/AstroPages-Bilingual",
+    name: "DeepSeek",
+    href: "https://www.deepseek.com/",
     linkTitle: `${SITE.title} on GitHub`,
-    icon: IconGitHub,
+    icon: IconDeepSeek,
   },
   {
     name: "X",
@@ -29,18 +29,18 @@ export const SOCIALS: Social[] = [
     linkTitle: `${SITE.title} on X`,
     icon: IconBrandX,
   },
-  {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/in/username/",
-    linkTitle: `${SITE.title} on LinkedIn`,
-    icon: IconLinkedin,
-  },
-  {
-    name: "Mail",
-    href: "mailto:yourmail@gmail.com",
-    linkTitle: `Send an email to ${SITE.title}`,
-    icon: IconMail,
-  },
+  // {
+  //   name: "LinkedIn",
+  //   href: "https://www.linkedin.com/in/username/",
+  //   linkTitle: `${SITE.title} on LinkedIn`,
+  //   icon: IconLinkedin,
+  // },
+  // {
+  //   name: "Mail",
+  //   href: "mailto:yourmail@gmail.com",
+  //   linkTitle: `Send an email to ${SITE.title}`,
+  //   icon: IconMail,
+  // },
 ] as const;
 
 export const SHARE_LINKS: Social[] = [
