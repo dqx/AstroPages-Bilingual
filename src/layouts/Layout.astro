@@ -36,7 +36,8 @@ const {
 
 const socialImageURL = new URL(ogImage, Astro.url);
 
-const structuredData = {
+// Enhanced structured data with WebSite and BreadcrumbList
+const structuredData = pubDatetime ? {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   headline: `${title}`,
@@ -50,6 +51,35 @@ const structuredData = {
       ...(profile && { url: profile }),
     },
   ],
+  publisher: {
+    "@type": "Organization",
+    name: SITE.title,
+    logo: {
+      "@type": "ImageObject",
+      url: new URL("/favicon.svg", Astro.site)
+    }
+  },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": canonicalURL
+  },
+  description: description,
+  inLanguage: lang,
+} : {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: SITE.title,
+  description: description,
+  url: SITE.website,
+  inLanguage: lang,
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: `${SITE.website}/search?q={search_term_string}`
+    },
+    "query-input": "required name=search_term_string"
+  }
 };
 ---
 
@@ -66,6 +96,11 @@ const structuredData = {
     <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
 
+    <!-- Hreflang for multilingual SEO -->
+    <link rel="alternate" hreflang="zh" href={new URL(Astro.url.pathname.replace(/^\/en/, ""), Astro.site)} />
+    <link rel="alternate" hreflang="en" href={new URL(lang === "zh" ? `/en${Astro.url.pathname}` : Astro.url.pathname, Astro.site)} />
+    <link rel="alternate" hreflang="x-default" href={new URL(Astro.url.pathname.replace(/^\/en/, ""), Astro.site)} />
+
     <!-- Load Font -->
     <Font
       cssVariable="--font-google-sans-code"
@@ -80,10 +115,14 @@ const structuredData = {
     <link rel="sitemap" href="/sitemap-index.xml" />
 
     <!-- Open Graph / Facebook -->
+    <meta property="og:type" content={pubDatetime ? "article" : "website"} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:image" content={socialImageURL} />
+    <meta property="og:locale" content={lang === "zh" ? "zh_CN" : "en_US"} />
+    <meta property="og:locale:alternate" content={lang === "zh" ? "en_US" : "zh_CN"} />
+    <meta property="og:site_name" content={SITE.title} />
 
     <!-- Article Published/Modified time -->
     {

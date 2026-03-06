@@ -2,7 +2,7 @@ export const SITE = {
   website: "https://find-ai.pages.dev", // replace this with your deployed domain
   author: "tosaki",
   profile: "https://t0saki.com",
-  desc: "AI工具,小机场,VPN,ClaudeCode,免费机场,科学上网,翻墙",
+  desc: "发现AI - 探索最新AI工具、免费机场资源和科学上网指南。提供ClaudeCode使用教程、VPN推荐等实用内容,帮助每个人便捷使用AI技术。",
   title: "发现AI",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
