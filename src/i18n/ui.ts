@@ -37,7 +37,7 @@ export const ui = {
 
     // Home page hero
     "hero.greeting": "发现AI",
-    "hero.description": "这是一个公益博客，旨在让每个人都能方便地使用AI工具",
+    "hero.description": "这是一个公益博客，致力于让每个人都能方便地使用AI工具",
     "hero.cta": "获取免费小机场，AI工具安装和使用指南",
     "hero.socialLinks": "友情链接：",
 
