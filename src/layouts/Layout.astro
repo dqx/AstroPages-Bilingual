@@ -37,58 +37,56 @@ const {
 const socialImageURL = new URL(ogImage, Astro.url);
 
 // Enhanced structured data with WebSite and BreadcrumbList
-const structuredData = pubDatetime ? {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  headline: `${title}`,
-  image: `${socialImageURL}`,
-  datePublished: `${pubDatetime?.toISOString()}`,
-  ...(modDatetime && { dateModified: modDatetime.toISOString() }),
-  author: [
-    {
-      "@type": "Person",
-      name: `${author}`,
-      ...(profile && { url: profile }),
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: SITE.title,
-    logo: {
-      "@type": "ImageObject",
-      url: new URL("/favicon.svg", Astro.site)
+const structuredData = pubDatetime
+  ? {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: `${title}`,
+      image: `${socialImageURL}`,
+      datePublished: `${pubDatetime?.toISOString()}`,
+      ...(modDatetime && { dateModified: modDatetime.toISOString() }),
+      author: [
+        {
+          "@type": "Person",
+          name: `${author}`,
+          ...(profile && { url: profile }),
+        },
+      ],
+      publisher: {
+        "@type": "Organization",
+        name: SITE.title,
+        logo: {
+          "@type": "ImageObject",
+          url: new URL("/favicon.svg", Astro.site),
+        },
+      },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": canonicalURL,
+      },
+      description: description,
+      inLanguage: lang,
     }
-  },
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id": canonicalURL
-  },
-  description: description,
-  inLanguage: lang,
-} : {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: SITE.title,
-  description: description,
-  url: SITE.website,
-  inLanguage: lang,
-  potentialAction: {
-    "@type": "SearchAction",
-    target: {
-      "@type": "EntryPoint",
-      urlTemplate: `${SITE.website}/search?q={search_term_string}`
-    },
-    "query-input": "required name=search_term_string"
-  }
-};
+  : {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: SITE.title,
+      description: description,
+      url: SITE.website,
+      inLanguage: lang,
+      potentialAction: {
+        "@type": "SearchAction",
+        target: {
+          "@type": "EntryPoint",
+          urlTemplate: `${SITE.website}/search?q={search_term_string}`,
+        },
+        "query-input": "required name=search_term_string",
+      },
+    };
 ---
 
 <!doctype html>
-<html
-  dir={SITE.dir}
-  lang={lang}
-  class={`${scrollSmooth && "scroll-smooth"}`}
->
+<html dir={SITE.dir} lang={lang} class={`${scrollSmooth && "scroll-smooth"}`}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -97,9 +95,24 @@ const structuredData = pubDatetime ? {
     <meta name="generator" content={Astro.generator} />
 
     <!-- Hreflang for multilingual SEO -->
-    <link rel="alternate" hreflang="zh" href={new URL(Astro.url.pathname.replace(/^\/en/, ""), Astro.site)} />
-    <link rel="alternate" hreflang="en" href={new URL(lang === "zh" ? `/en${Astro.url.pathname}` : Astro.url.pathname, Astro.site)} />
-    <link rel="alternate" hreflang="x-default" href={new URL(Astro.url.pathname.replace(/^\/en/, ""), Astro.site)} />
+    <link
+      rel="alternate"
+      hreflang="zh"
+      href={new URL(Astro.url.pathname.replace(/^\/en/, ""), Astro.site)}
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href={new URL(
+        lang === "zh" ? `/en${Astro.url.pathname}` : Astro.url.pathname,
+        Astro.site
+      )}
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href={new URL(Astro.url.pathname.replace(/^\/en/, ""), Astro.site)}
+    />
 
     <!-- Load Font -->
     <Font
@@ -121,7 +134,10 @@ const structuredData = pubDatetime ? {
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:image" content={socialImageURL} />
     <meta property="og:locale" content={lang === "zh" ? "zh_CN" : "en_US"} />
-    <meta property="og:locale:alternate" content={lang === "zh" ? "en_US" : "zh_CN"} />
+    <meta
+      property="og:locale:alternate"
+      content={lang === "zh" ? "en_US" : "zh_CN"}
+    />
     <meta property="og:site_name" content={SITE.title} />
 
     <!-- Article Published/Modified time -->
@@ -179,29 +195,32 @@ const structuredData = pubDatetime ? {
       )
     }
 
+    <meta name="baidu-site-verification" content="codeva-g9EturTX57" />
+
     <ClientRouter />
 
     <!-- Language Preference Redirect -->
     <script is:inline>
-      (function() {
+      (function () {
         const preferredLang = localStorage.getItem("preferredLang");
         const path = window.location.pathname;
 
         // Function to handle redirection (Global)
         function checkAndRedirect(targetLang) {
-            const currentPath = window.location.pathname;
-            const isEnglishPath = currentPath.startsWith("/en/") || currentPath === "/en";
+          const currentPath = window.location.pathname;
+          const isEnglishPath =
+            currentPath.startsWith("/en/") || currentPath === "/en";
 
-            if (targetLang === "en" && !isEnglishPath) {
-                // Redirect to English
-                // Ensure we don't double slash if path is just "/"
-                const pathSuffix = currentPath === "/" ? "/" : currentPath;
-                window.location.replace("/en" + pathSuffix.replace(/^\//, "/")); 
-            } else if (targetLang === "zh" && isEnglishPath) {
-                // Redirect to Chinese
-                const newPath = currentPath.replace(/^\/en/, "") || "/";
-                window.location.replace(newPath);
-            }
+          if (targetLang === "en" && !isEnglishPath) {
+            // Redirect to English
+            // Ensure we don't double slash if path is just "/"
+            const pathSuffix = currentPath === "/" ? "/" : currentPath;
+            window.location.replace("/en" + pathSuffix.replace(/^\//, "/"));
+          } else if (targetLang === "zh" && isEnglishPath) {
+            // Redirect to Chinese
+            const newPath = currentPath.replace(/^\/en/, "") || "/";
+            window.location.replace(newPath);
+          }
         }
 
         if (preferredLang) {
