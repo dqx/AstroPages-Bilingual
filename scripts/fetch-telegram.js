@@ -14,17 +14,17 @@
 import { writeFileSync, existsSync, readFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { ProxyAgent, setGlobalDispatcher } from 'undici';
+// import { ProxyAgent, setGlobalDispatcher } from 'undici';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// 自动检测并应用代理设置
-const proxyUrl = process.env.https_proxy || process.env.HTTPS_PROXY || process.env.http_proxy || process.env.HTTP_PROXY;
-if (proxyUrl) {
-  setGlobalDispatcher(new ProxyAgent(proxyUrl));
-  console.log(`🔌 使用代理: ${proxyUrl}`);
-}
+// // 自动检测并应用代理设置
+// const proxyUrl = process.env.https_proxy || process.env.HTTPS_PROXY || process.env.http_proxy || process.env.HTTP_PROXY;
+// if (proxyUrl) {
+//   setGlobalDispatcher(new ProxyAgent(proxyUrl));
+//   console.log(`🔌 使用代理: ${proxyUrl}`);
+// }
 
 // 配置
 const CONFIG = {

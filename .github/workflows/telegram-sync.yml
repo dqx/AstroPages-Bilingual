@@ -1,9 +1,9 @@
 name: Telegram Weekly Sync
 
-# 每周六 14:00 UTC (北京时间周六 22:00) 执行
+# 每周五 12:00 UTC (北京时间周五 20:00) 执行
 on:
   schedule:
-    - cron: "15 14 * * 6"
+    - cron: "0 12 * * 5"
   # 支持手动触发
   workflow_dispatch:
 
