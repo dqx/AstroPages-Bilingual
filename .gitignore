@@ -27,3 +27,6 @@ pnpm-debug.log*
 # pagefind
 
 public/pagefind
+.ace-tool/
+.claude/
+SEO-OPTIMIZATION.md
