@@ -1,6 +1,6 @@
 ---
 title: 免费机场列表
-pubDatetime: 2026-03-05T00:00:00Z
+pubDatetime: 2026-03-03T00:00:00Z
 description: 每周五晚上定时更新免费机场。
 featured: true
 draft: false
