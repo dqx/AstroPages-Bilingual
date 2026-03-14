@@ -12,7 +12,7 @@ tags:
 
 ## VPN客户端最新版本下载
 
-我们为您整理了所有客户端的快捷下载链接和详细使用教程，适用于Windows、MacOS、Linux以及移动设备。您可以轻松找到适合的下载选项，确保快速安装和配置。我们的目标是提供清晰的指导，帮助您迅速上手，享受流畅的网络体验~
+我们为您整理了所有客户端的快捷下载链接和详细使用教程，适用于Windows、MacOS、Linux、手机等移动设备。您可以轻松找到适合的下载选项，确保快速安装和配置。我们的目标是提供清晰的指导，帮助您迅速上手，享受流畅的网络体验~
 
 ### **Android 最新版本下载**
 
@@ -43,7 +43,7 @@ tags:
 | V2rayN for Mac            | [本地下载](https://download.client.clashnews.org/proxy-clients-latest/mac/v2rayN-latest.dmg)                                                                                                             | [查看教程](https://w02.clashdoc.pro/?id=12)   |
 | ClashX Pro                | [本地下载](https://download.client.clashnews.org/proxy-clients-all/mac/ClashXPro-1.97.0.4.dmg?_gl=1*dmyqta*_ga*OTU4Mzg2MjEwLjE3Mjk2NTgxMzk.*_ga_H6C2F737YY*MTcyOTc0MDkwOC41LjEuMTcyOTc0NzQ1Mi4wLjAuMA..) | [查看教程](https://w02.clashdoc.pro/?id=7)    |
 
-**iOS 最新版本下载**
+### **iOS 最新版本下载**
 
 | **软件名称** | **最新版本下载**                                                       | **使用教程**                                |
 | ------------ | ---------------------------------------------------------------------- | ------------------------------------------- |

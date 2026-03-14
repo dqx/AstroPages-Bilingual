@@ -1,6 +1,6 @@
 ---
 title: 免费机场列表
-pubDatetime: 2026-03-13T00:00:00Z
+pubDatetime: 2026-03-14T13:41:50.822Z
 description: 每周五晚上定时更新免费机场。
 featured: true
 draft: false
@@ -26,11 +26,11 @@ tags:
 
 | 订阅链接                                                                                                          | 订阅流量   | 已用上行 | 已用下行  | 剩余流量   | 到期时间            | 剩余时间              |
 | ----------------------------------------------------------------------------------------------------------------- | ---------- | -------- | --------- | ---------- | ------------------- | --------------------- |
+| https://sub1.all--green.com/mfjc/6682c9a3dd94f687e520c41a6738d11f | 200 GB | 3.48 GB | 101.19 GB | 95.31 GB | 2026-04-04 17:41:00 | 20天 23小时 11分钟 |
+| https://sub1.all--green.com/mfjc/6682c9a3dd94f687e520c41a6738d11f | 200 GB | 3.48 GB | 101.19 GB | 95.31 GB | 2026-04-04 17:41:00 | 20天 23小时 11分钟 |
 | https://www.xrayvip.com/free.txt                                                                                  | 976.56 TB  | 4.3 MB   | 37.99 TB  | 938.56 TB  | 2099-12-31 00:00:00 | 26955天 3小时 30分钟  |
 | https://b6enwo8026sf4k.wca1rs59sefb1kl655b0.online/api/v1/client/subscribe?token=866d80b875952eb6cc89a967411eac48 | 1000 GB    | 9.62 GB  | 74.68 GB  | 915.69 GB  | 2026-04-12 16:33:42 | 29天 21小时 10分钟    |
 | https://xfapp.quickbeevpn.com/api/v1/client/subscribe?token=f29a710191d5672892c2401084c5eb07&flag=meta            | 9765.62 TB | 5.08 GB  | 273.24 GB | 9765.35 TB | 3166-10-28 02:53:31 | 416612天 9小时 15分钟 |
-| https://b6enwo8026sf4k.wca1rs59sefb1kl655b0.online/api/v1/client/subscribe?token=1b48cf2fa8dc9f82320ae4eee0ced146 | 1000 GB    | 1.47 GB  | 51.98 GB  | 946.53 GB  | 2026-04-12 16:25:44 | 29天 21小时 18分钟    |
-| https://b6enwo8026sf4k.wca1rs59sefb1kl655b0.online/api/v1/client/subscribe?token=7abb2c72b03a0423fa43c3af2ca032ae | 1000 GB    | 0 B      | 0 B       | 1000 GB    | 2026-04-13 18:57:29 | 30天 23小时 59分钟    |
 
 ## 使用说明
 
