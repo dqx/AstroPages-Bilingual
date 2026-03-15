@@ -202,6 +202,9 @@ const structuredData = pubDatetime
     <!-- Language Preference Redirect -->
     <script is:inline>
       (function () {
+        // Skip redirect for search engine bots to avoid Search Console "page with redirect" issues
+        if (/bot|crawl|spider|slurp|googlebot|bingbot|yandex|baidu|duckduckbot|facebookexternalhit|twitterbot|linkedinbot|semrush/i.test(navigator.userAgent)) return;
+
         const preferredLang = localStorage.getItem("preferredLang");
         const path = window.location.pathname;
 
