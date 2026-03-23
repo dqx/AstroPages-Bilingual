@@ -8,7 +8,6 @@ tags:
   - ClaudeCode
   - PPT
   - AI工具
-  - 效率工具
 ---
 
 ## 用 ClaudeCode 生成 PPT？完全可以！
