@@ -1,6 +1,6 @@
 ---
 title: 使用 ClaudeCode 生成 PPT 方法大全
-pubDatetime: 2026-03-24T00:00:00Z
+pubDatetime: 2026-03-23T00:00:00Z
 description: 盘点当前使用 ClaudeCode 生成 PPT 的主流方案，从官方 Skill 到开源项目，总有一款适合你。
 featured: true
 draft: false
