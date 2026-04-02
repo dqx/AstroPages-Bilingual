@@ -2,8 +2,8 @@
 title: 各类机场客户端下载
 pubDatetime: 2026-03-06T00:00:00Z
 description: 每周五晚上定时更新免费机场。
-featured: true
-draft: false
+featured: false
+draft: true
 tags:
   - 免费机场
   - 翻墙

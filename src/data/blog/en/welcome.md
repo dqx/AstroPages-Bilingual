@@ -3,7 +3,7 @@ title: Welcome to AstroPaper
 pubDatetime: 2026-01-11T00:00:00Z
 description: This is a sample English blog post to demonstrate the bilingual blog system.
 featured: true
-draft: false
+draft: true
 tags:
   - welcome
   - introduction
