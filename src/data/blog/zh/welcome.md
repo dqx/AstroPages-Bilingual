@@ -2,8 +2,8 @@
 title: 免费机场列表
 pubDatetime: 2026-03-27T14:32:46.188Z
 description: 每周五晚上定时更新免费机场。
-featured: false
-draft: true
+featured: true
+draft: false
 tags:
   - 免费机场
   - 翻墙
