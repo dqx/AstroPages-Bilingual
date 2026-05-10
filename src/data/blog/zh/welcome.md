@@ -1,6 +1,6 @@
 ---
 title: 免费机场列表
-pubDatetime: 2026-03-27T14:32:46.188Z
+pubDatetime: 2026-05-10T08:55:43.648Z
 description: 每周五晚上定时更新免费机场。
 featured: true
 draft: false
@@ -26,11 +26,11 @@ tags:
 
 | 订阅链接                                                                                               | 订阅流量   | 已用上行   | 已用下行 | 剩余流量      | 到期时间            | 剩余时间             |
 | ------------------------------------------------------------------------------------------------------ | ---------- | ---------- | -------- | ------------- | ------------------- | -------------------- |
-| https://suba.f2vip.net/api/v1/client/subscribe?token=5c4d77cb18fb61d420ebf1cb8eb2883b                  | 100 GB     | 1015.93 MB | 80.97 GB | 18.03 GB      | 2026-04-25 09:56:27 | 28天 16小时 14分钟   |
-| https://raoku-pm.hf.space/api/v1/subscribe?token=f1zk66yqufbze408132k7635                              | 8388608 TB | 55.9 GB    | 75.97 GB | 8388607.87 TB | 2099-12-31 23:23:23 | 26942天 5小时 36分钟 |
-| https://luosiqimeng.freegangkou.top/freegangkou/2c5e56a3ce2872e197fe4ce11b7e45e6                       | 1000 GB    | 8.12 GB    | 805.3 GB | 186.56 GB     | 2026-03-28 01:41:07 | 0天 7小时 32分钟     |
-| https://suba.f2vip.net/api/v1/client/subscribe?token=2a42ebc2187e0bc51d06b20b532b12f5                  | 100 GB     | 824.4 MB   | 71.42 GB | 27.76 GB      | 2026-04-25 09:48:02 | 28天 15小时 5分钟    |
-| https://baipiaoyun-oss.freeloadcloud.eu/api/v1/client/subscribe?token=040c77fafccf39f903b38d89d5ea3564 | 80 GB      | 149.01 MB  | 6.17 GB  | 73.67 GB      | 2026-04-26 19:33:59 | 29天 23小时 17分钟   |
+| https://ldgb.pages.dev/sub?token=5238141bc3daa773b225209767b9fb2c | 24 TB | 5.89 TB | 5.89 TB | 12.2 TB | 2099-12-31 00:00:00 | 26899天 4小时 12分钟 |
+| https://www7th.ga-sub.hair/api/v1/client/subscribe?token=327c174bc48b232d3871c6ffb3f8a25d | 1 TB | 515.24 MB | 63.97 GB | 959.51 GB | 2026-06-08 00:16:04 | 30天 4小时 17分钟 |
+| https://2.juanwangjc.top/juanwang/dingyue1/sub1/babiq?token=1a7a3ead1236137ee05d77bd6a21af7e | 976562.5 TB | 0 B | 0 B | 976562.5 TB | 13433-12-12 23:58:37 | 4166538天 17小时 21分钟 |
+| https://2.juanwangjc.top/juanwang/dingyue1/sub1/babiq?token=1a7a3ead1236137ee05d77bd6a21af7e | 976562.5 TB | 0 B | 0 B | 976562.5 TB | 13433-12-12 23:58:37 | 4166538天 17小时 21分钟 |
+| https://bglyquhwuqaz.us-west-1.clawcloudrun.com/api/v1/subscribe?token=g6ra!bujhj9vx*gyw4b-l1yh | 8388608 TB | 91.04 GB | 65.92 GB | 8388607.84 TB | 2099-12-31 23:23:23 | 26899天 6小时 49分钟 |
 
 ## 使用说明
 
