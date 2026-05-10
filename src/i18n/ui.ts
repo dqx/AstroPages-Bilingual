@@ -39,6 +39,7 @@ export const ui = {
     "hero.greeting": "发现AI",
     "hero.description": "这是一个公益博客，致力于让每个人都能方便地使用AI工具",
     "hero.cta": "获取免费小机场，AI工具安装和使用指南",
+    "hero.cta1": "推荐一个用AI写简历的免费网站",
     "hero.socialLinks": "友情链接：",
 
     // Sections
